@@ -8,11 +8,7 @@ from scrape_books import scrape_books
 
 def scrape():
     """Scrape everything and return a list of books."""
-
-    book_urls = scrape_all_pages()
-    books = scrape_books(book_urls)
-
-    return books
+    return None
 
 
 def write_books_to_csv(books, path):
