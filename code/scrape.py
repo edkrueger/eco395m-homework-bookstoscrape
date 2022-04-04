@@ -27,8 +27,7 @@ if __name__ == "__main__":
 
     os.makedirs(BASE_DIR, exist_ok=True)
 
-    book_urls = scrape_all_pages()
-    books = scrape_books(book_urls)
+    books = scrape()
 
     write_books_to_csv(books, CSV_PATH)
     write_books_to_jsonl(books, JSONL_PATH)
